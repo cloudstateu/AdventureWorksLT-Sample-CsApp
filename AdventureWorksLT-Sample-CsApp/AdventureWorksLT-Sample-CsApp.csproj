@@ -3,9 +3,12 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>AdventureWorksLT_Sample_CsApp</RootNamespace>
+    <UserSecretsId>6dc1bdb1-faac-4be7-9b84-1739f6670b9e</UserSecretsId>
+    <ApplicationInsightsResourceId>/subscriptions/b1817160-3737-4813-96f2-2ba4c38247d8/resourceGroups/sh-lab/providers/microsoft.insights/components/sh-lab-01</ApplicationInsightsResourceId>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.15.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.4">
       <PrivateAssets>all</PrivateAssets>
