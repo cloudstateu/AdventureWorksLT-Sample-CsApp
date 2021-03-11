@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventureWorksLT-Sample-CsApp", "AdventureWorksLT-Sample-CsApp\AdventureWorksLT-Sample-CsApp.csproj", "{D49AC6A0-BF4F-4B29-856A-8A156F96BE81}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D49AC6A0-BF4F-4B29-856A-8A156F96BE81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D49AC6A0-BF4F-4B29-856A-8A156F96BE81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D49AC6A0-BF4F-4B29-856A-8A156F96BE81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D49AC6A0-BF4F-4B29-856A-8A156F96BE81}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4FF5EBD3-B35B-42E2-8BB0-D4CFD8FC6ED1}
+	EndGlobalSection
+EndGlobal
