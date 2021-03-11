@@ -1,17 +1,18 @@
 ﻿using AdventureWorksLT_Sample_CsApp.Models;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System.Linq;
 
 namespace AdventureWorksLT_Sample_CsApp.Pages
 {
-  public class PrivacyModel : PageModel
+  public class ProductsCountModel : PageModel
   {
-    private readonly ILogger<PrivacyModel> _logger;
+    private readonly ILogger<ProductsCountModel> _logger;
     private readonly SampleDatabaseContext _dbContext;
 
-    public PrivacyModel(ILogger<PrivacyModel> logger, SampleDatabaseContext dbContext)
+    public int Count { get; set; }
+
+    public ProductsCountModel(ILogger<ProductsCountModel> logger, SampleDatabaseContext dbContext)
     {
       _logger = logger;
       _dbContext = dbContext;
@@ -19,11 +20,9 @@ namespace AdventureWorksLT_Sample_CsApp.Pages
 
     public void OnGet()
     {
-      var count = _dbContext.Products
+      Count = _dbContext.Products
         .Where(_ => _.SellEndDate == null)
         .Count();
-
-      ViewData["count"] = count;
     }
   }
 }
