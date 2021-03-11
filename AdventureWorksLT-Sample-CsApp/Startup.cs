@@ -1,3 +1,4 @@
+using AdventureWorksLT_Sample_CsApp.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -20,7 +21,7 @@ namespace AdventureWorksLT_Sample_CsApp
     public void ConfigureServices(IServiceCollection services)
     {
       services.AddRazorPages();
-      services.AddDbContext<SampleDbContext>(_ => 
+      services.AddDbContext<SampleDatabaseContext>(_ => 
         _.UseSqlServer(Configuration.GetConnectionString("Default")));
     }
 
